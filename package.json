@@ -11,7 +11,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/deepchand1107/sample_addon",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -51,6 +51,7 @@
     "node": "^4.5 || 6.* || >= 7.*"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://deepchand1107.github.io/sample_addon/"
   }
 }
