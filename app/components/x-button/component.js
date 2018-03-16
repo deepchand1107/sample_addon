@@ -1,0 +1,1 @@
+export { default } from 'sample-addon/components/x-button/component';
