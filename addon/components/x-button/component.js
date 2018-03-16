@@ -4,5 +4,13 @@ import layout from './template';
 export default Ember.Component.extend({
   layout,
   tagName: 'button',
-  attributeBindings: ['isDisabled:disabled', 'type', 'title']
+  classNames: ['btn'],
+  classNameBindings: ['btnTypeClass'],
+  attributeBindings: ['isDisabled:disabled', 'type', 'title'],
+  buttonType: 'default',
+  btnTypeClass: Ember.computed('buttonType', function () {
+    let btnType = this.get('buttonType') || 'default';
+
+    return `btn-${btnType}`;
+  }),
 });
