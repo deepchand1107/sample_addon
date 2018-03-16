@@ -1,1 +1,1 @@
-export { default } from 'sample-addon/components/x-button/component';
+export { default } from 'sample_addon/components/x-button/component';

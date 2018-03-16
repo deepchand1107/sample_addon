@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'sample-addon'
+  name: 'sample_addon'
 };
