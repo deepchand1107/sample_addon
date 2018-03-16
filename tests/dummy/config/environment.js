@@ -42,7 +42,11 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
   }
-
+  if (environment === 'github') {
+    //github.io
+    ENV.rootURL = '/sample-addon/';
+    ENV.locationType = 'hash';
+  }
   if (environment === 'production') {
     ENV.locationType = 'hash';
     ENV.baseUrl = '/sample-addon/';
