@@ -44,13 +44,13 @@ module.exports = function(environment) {
   }
   if (environment === 'github') {
     //github.io
-    ENV.rootURL = '/sample-addon/';
+    ENV.rootURL = '/sample_addon/';
     ENV.locationType = 'hash';
   }
   if (environment === 'production') {
     ENV.locationType = 'hash';
-    ENV.rootURL = '/sample-addon/';
-    ENV.baseUrl = '/sample-addon/';
+    ENV.rootURL = '/sample_addon/';
+    ENV.baseUrl = '/sample_addon/';
 
   }
 
