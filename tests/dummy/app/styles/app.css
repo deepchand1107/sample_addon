@@ -1,24 +1,122 @@
-html,body {
-  height: 100%;
+html, body {
+    height: 100%;
+    overflow: hidden;
 }
 
 body > div:first-of-type {
     height: 100%;
-}​
+    color: #333f48;
+}
 
+​
+.dummy {
+    background-color: #333f48 !important;
+}
+.head-topnav {
+    padding: 5px 10px;
+    background: #EEE;
+    font-size: .8rem;
+    color: #333F48;
+}   
+
+.ukb-nav-bg {
+    background-color: #333f48 !important;
+}
+
+.ukb-header-bg {
+    background-color: #005eb8 !important;
+    color: #fff;
+}
 
 .inner-content {
-  padding: 10px;
+    height: 100%;
+    padding: 1rem;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-right: -15px;
 }
+.nav {
+   margin: 0 -15px;
+}
+
+.nav li.brd-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .nav li {
-  margin: 0 -15px;
-  border-bottom: 1px solid #dee2e6;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+    padding: 10px;
+    color: #fff;
+    position: relative;
 }
-.nav a {
+
+.nav li a {
   display: block;
-  padding: 15px;
   color: #fff;
 }
-.nav a:hover {
-  background-color: #007bff;
+
+.nav li:hover {
+    
+}
+
+.nav li a.active::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    right: 0;
+    top: 26%;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #fff;
+}
+
+.nav li ul {
+  padding:0;
+  list-style: none;
+  margin-right: -10px;
+
+}
+ul.sub-nav li {
+  padding: 0px;
+}
+
+ul.sub-nav a{
+  font-size:14px;
+  padding: 5px;
+}
+
+h1 {
+    color: #09F;
+    font-weight: 200;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+pre {
+    margin: 0;
+}
+
+.ukb-example {
+    border: 2px solid #F8F9FC;
+    border-radius: 5px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+
+.ukb-render {
+    padding: 15px;
+}
+
+.ukb-snippet {
+    padding: 15px;
+    background-color: #F8F9FC;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F8F9FC;
 }

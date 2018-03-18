@@ -1,18 +1,36 @@
-<div class="d-flex flex-column flex-md-row align-items-center p-3 bg-white border-bottom box-shadow">
+<div class="head-topnav text-right">
+  Version {{app-version hideSha=true}}
+</div>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 ukb-header-bg">
       <h5 class="my-0 mr-md-auto font-weight-normal">UI Component Library </h5>
 </div>
 <div class="container-fluid h-100">
   <div class="row justify-content-center h-100">
 
-    <div class="col-2 border-right bg-dark">
-      <ul class="nav navbar-nav navigation">
-        <li>{{#link-to 'x-button'}}x-button{{/link-to}}</li>
+    <div class="col-2 ukb-nav-bg">
+      <ul class="nav navbar-nav">
+        <li class='brd-bottom font-weight-bold'>{{#link-to 'colour-palette'}}Colour Palette{{/link-to}}</li>
+        <li class="brd-bottom"> <strong>Atoms</strong>
+          <ul class="sub-nav">
+            <li>{{#link-to 'x-button'}}x-button{{/link-to}}</li>
+            <li><a href="#">x-checkbox</a></li>
+            <li><a href="#">x-radio</a></li>
+
+            </ul>
+        </li>
+        {{#link-to 'x-button' tagName="li" class='brd-bottom font-weight-bold'}}Molecules{{/link-to}}
+        {{#link-to 'x-button' tagName="li" class='brd-bottom font-weight-bold'}}Organisms{{/link-to}}
       </ul>
 
     </div>
 
     <div class="col-10">
-     <div class="inner-content"> {{outlet}} </div>
+     <div class="inner-content">
+       <div class="row">
+         <div class="col-9">{{outlet}}</div>
+       </div>
+       
+    </div>
     </div>
   </div>
 </div>

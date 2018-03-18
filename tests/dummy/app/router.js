@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('x-button');
+  this.route('colour-palette');
 });
 
 export default Router;

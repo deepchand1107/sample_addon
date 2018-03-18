@@ -1,5 +1,53 @@
+<div class="mb-5 pb-2 border-bottom">
+<h1>Buttons</h1>
+<p class="bd-lead">Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+</div>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Property</th>
+      <th scope="col">Type</th>
+      <th scope="col">Default</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Automatically Generated</td>
+      <td>Sets the <code>id</code> of the <code>&#x3C;a&#x3E;</code> tag</td>
+    </tr>
+    <tr>
+      <td>buttonType</td>
+      <td>string</td>
+      <td><code>default</code></td>
+      <td>Defines the style and type of button <code>primary, secondary, success, danger</code> tag</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3> Primary </h3>
-{{#x-button buttonType="primary"}} Primary {{/x-button}}
+<div class="ukb-example">
+  <div class="ukb-render">
+    {{#x-button buttonType="primary"}} Primary {{/x-button}}
+  </div>
+  <div class="ukb-snippet">
+  <pre>
+      &lcub;&lcub;#blue-button-group selectedValue="2" class="with-check medium" as |bg|}}
+        &lcub;&lcub;#bg.button value="1"}}first&lcub;&lcub;/bg.button}}
+        &lcub;&lcub;#bg.button value="2"}}other&lcub;&lcub;/bg.button}}
+        &lcub;&lcub;#bg.button value="3"}}Monthly Direct debit&lcub;&lcub;/bg.button}}
+        &lcub;&lcub;#bg.button value="4"}}Annual Direct Debit &lcub;&lcub;/bg.button}}
+      &lcub;&lcub;/blue-button-group}}
+    </pre>
+
+
+</div>
+</div>
+
+
+
 
 <h3> Secondary </h3>
 {{#x-button buttonType="secondary"}} Secondary {{/x-button}}
